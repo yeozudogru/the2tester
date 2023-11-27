@@ -2,12 +2,12 @@ from the2 import check_month
 
 resultList = []
 theList = []
-with open('/Users/yusufefeozudogru/ceng/111/tester/results.txt', 'r') as results:
+with open('results.txt', 'r') as results:
     for line in results:
         line = line.strip('\n')
         result = eval(line)
         resultList.append(result)
-with open('/Users/yusufefeozudogru/ceng/111/tester/test.txt', 'r') as test:
+with open('test.txt', 'r') as test:
     for line in test:
         line = line.strip('\n').split(' ')
         theResult = check_month(line)
